@@ -1,0 +1,89 @@
+Boiler code of java with bufferString Provided By Aayush Sir
+----------------------------------
+import java.util.*;
+import java.io.*;
+class Main{
+    static class FastReader
+  {
+    BufferedReader br;
+    StringTokenizer st;
+    
+    public FastReader()
+    {
+      br = new BufferedReader(new InputStreamReader(System.in));
+    }
+    String next()
+    {
+      while (st == null || !st.hasMoreElements()){
+        try { st = new StringTokenizer(br.readLine()); }
+        catch (IOException e) { e.printStackTrace(); }
+      }
+      return st.nextToken();
+    }
+    int nextInt() { return Integer.parseInt(next()); }
+    long nextLong() { return Long.parseLong(next()); }
+    double nextDouble(){ return Double.parseDouble(next()); }
+    String nextLine(){
+      String str = "";
+      try { str = br.readLine(); }
+      catch (IOException e) { e.printStackTrace(); }
+      return str;
+    }
+  }
+  public static void main(String[] args){
+      FastReader fs=new FastReader();
+      int tc=fs.nextInt();
+        
+  }
+}
+-----------------------------
+
+Boilar Plate Code for javascript:
+--------------------------------------
+
+function runProgram(input){
+  int=input.trim().split("\n");
+}
+
+
+if (process.env.USER === "") {
+  runProgram(``);
+} else {
+  process.stdin.resume();
+  process.stdin.setEncoding("ascii");
+  let read = "";
+  process.stdin.on("data", function (input) {
+    read += input;
+  });
+  process.stdin.on("end", function () {
+    read = read.replace(/\n$/, "");
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+  });
+  process.on("SIGINT", function () {
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+    process.exit(0);
+  });
+}
+
+
+boilar code for java by Scanner
+------------------------------
+
+import java.util.*
+class Main{
+     public static void main(String[] args){
+         Scanner input=new Scanner(System.in);
+
+     }
+}
+
+
+link==https://drive.google.com/file/d/1jzRC1o8n0wnf4PyIcPDst50GLx09Cj4s/view
+
+
+buffer___link=https://drive.google.com/file/d/1U8HPJW_CdJ6oy4qgZ2jl4S6ayXX7RRSd/view
+
+
+
