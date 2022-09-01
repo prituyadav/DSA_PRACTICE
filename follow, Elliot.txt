@@ -1,0 +1,142 @@
+Follow the Knight
+-------------------
+
+
+//Enter code here
+function runProgram(input){
+    let [i,j,n]=input.trim().split(" ").map(Number);
+    let board = [[0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0,0,0]];
+   
+   //console.log(board.length,board[0].length)
+   
+    function x(board,i,j,n){
+       if(i<0 || i>9 || j<0 || j>9){
+            return;
+        }
+        if(n===0){
+            board[i][j]=1;
+            return;
+        }
+        
+        x(board,i+2,j+1,n-1);
+        x(board,i+2,j-1,n-1);
+        x(board,i-2,j+1,n-1);
+        x(board,i-2,j-1,n-1);
+        x(board,i+1,j+2,n-1);
+        x(board,i-1,j+2,n-1);
+        x(board,i+1,j-2,n-1);
+        x(board,i-1,j-2,n-1);
+    }
+    (x(board,i-1,j-1,n));
+    //console.log(board);
+    var count = 0;
+    for(let k=0;k<board.length;k++){
+        for(let l=0;l<board.length;l++){
+            if(board[k][l]==1){
+                count++;
+            }
+        }
+    }
+    console.log(count);
+}
+
+
+ 
+
+if (process.env.USER === "") {
+  runProgram(``);
+} else {
+  process.stdin.resume();
+  process.stdin.setEncoding("ascii");
+  let read = "";
+  process.stdin.on("data", function (input) {
+    read += input;
+  });
+  process.stdin.on("end", function () {
+    read = read.replace(/\n$/, "");
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+  });
+  process.on("SIGINT", function () {
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+    process.exit(0);
+  });
+}
+
+
+Mr.Elliot
+------------------------------
+/Enter code here
+function runProgram(input){
+    input=input.trim().split("\n");
+    let tc = +input[0];
+    let line = 1;
+    for(let i=0;i<tc;i++){
+        let len = +input[line];
+        line++;
+        let str = input[line];
+        line++;
+        MrRobotElliot(len,str);
+    }
+}
+function MrRobotElliot(len,str){
+    let ans = [];
+
+    function MrRobert(str,len){
+        if(str.length==1 || str.length==2){
+            ans.push(str);
+            return 
+        }
+        else if(str.length%2==1){
+            
+            ans.push(str[Math.floor((str.length/2))]);
+            let str1 = str.slice(0,Math.floor((str.length/2)));
+            let str2 = str.slice(Math.floor((str.length/2)+1),str.length)
+            return MrRobert(str1,len)+MrRobert(str2,len);
+           
+        }
+        else if(str.length%2===0){
+            ans.push(str[(str.length/2)-1]);
+            let str3 = str.slice(0,(str.length/2)-1);
+            let str4 = str.slice(str.length/2,str.length)
+            return MrRobert(str3,len)+MrRobert(str4,len);
+            
+        }
+    }
+    MrRobert(str,len);
+    console.log(ans.join(""));
+}
+
+
+ 
+
+if (process.env.USER === "") {
+  runProgram(``);
+} else {
+  process.stdin.resume();
+  process.stdin.setEncoding("ascii");
+  let read = "";
+  process.stdin.on("data", function (input) {
+    read += input;
+  });
+  process.stdin.on("end", function () {
+    read = read.replace(/\n$/, "");
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+  });
+  process.on("SIGINT", function () {
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+    process.exit(0);
+  });
+}
