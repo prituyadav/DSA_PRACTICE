@@ -1,6 +1,5 @@
 https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -19,13 +18,9 @@ class Solution {
 
         ListNode fast=dummy;
         ListNode slow=dummy;
-        
-        if(head.next==null && n==1){
-            return head.next;
-        }
-
+    
         while(n-->0){
-            if(fast==null){
+            if(fast.next==null){
                 return head.next;
             }
             fast=fast.next;
@@ -38,7 +33,7 @@ class Solution {
 
         slow.next=slow.next.next;
 
-        return head;
+        return dummy.next;
 
          }
 }
