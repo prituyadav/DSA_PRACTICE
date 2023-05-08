@@ -9,5 +9,5 @@ class Solution {
         }
         if (ans != x) return false;
         return true;
-    }
+   }
 }
