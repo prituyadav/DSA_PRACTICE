@@ -1,8 +1,7 @@
 // Brute Force Approach:
 // The brute force approach involves checking each pair of socks and counting the number of pairs with matching colors.
 
-// java
-// Copy code
+// java code
 public static int sockMerchantBruteForce(int n, int[] ar) {
     int count = 0;
     boolean[] visited = new boolean[n]; // to keep track of visited socks
