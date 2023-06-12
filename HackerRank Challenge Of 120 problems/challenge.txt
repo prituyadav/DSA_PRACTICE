@@ -1,0 +1,11 @@
+HackerRank Strategy for Beginners
+
+HackerRank Challenge: https://www.hackerrank.com/mountblue-technologies
+
+* The problems in the challenge are ordered from easy to medium level of difficulty. 
+* There are ~120 problems.
+* You can start off with problems on the following topics: Arrays, Strings, 2D Arrays.
+* Once you are comfortable with these topics, you can move to topics like Hashmap, Mathematics, Recursion. 
+* Check https://github.com/mountblue/prep for resources.
+
+Once complete, submit on https://bit.ly/submit_mb_prep for getting interviewed
