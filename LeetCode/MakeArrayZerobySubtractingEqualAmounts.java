@@ -14,7 +14,7 @@ public class MakeArrayZerobySubtractingEqualAmounts{
                 set.add(i);
             }
         }
-        System.out.println(set.size());
+        System.out.println(set.size();
 
     }
 }
