@@ -1,5 +1,10 @@
-public class Solution {
-    public int arrayPairSum(int[] nums) {
+public class ArrayPartition{
+  public static void main(String[] args){
+    int[] arr={1,2};
+    System.out.println(arrayPairSum(arr));
+
+  }
+ public static int arrayPairSum(int[] nums) {
         int[] table=new int[20002];
         for(int i:nums){
             table[i+10000]++;
@@ -23,4 +28,9 @@ public class Solution {
         }
         return res;
     }
+
 }
+
+
+
+

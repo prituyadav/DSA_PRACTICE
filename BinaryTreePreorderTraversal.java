@@ -14,21 +14,21 @@ class TreeNode{
 }
 */
 
-class Solution{
+// class Solution{
     
-    List<Integer> ans=new ArrayList<>();
-  public List<Integer> postorder(TreeNode root){
-    //write your code here.
-    if(root==null){
-        return ans;
-    }
+//     List<Integer> ans=new ArrayList<>();
+//   public List<Integer> postorder(TreeNode root){
+//     //write your code here.
+//     if(root==null){
+//         return ans;
+//     }
     
-    postorder(root.left);
-    postorder(root.right);
-    ans.add(root.data);
+//     postorder(root.left);
+//     postorder(root.right);
+//     ans.add(root.data);
     
-    return ans;
+//     return ans;
     
     
-  }
-}
+//   }
+// }

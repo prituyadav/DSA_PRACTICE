@@ -1,7 +1,14 @@
 import java.util.*;
 
-class Solution {
-    public void rotate(int[][] matrix) {
+
+
+public class RotateImage {
+
+    public static void main(String[] args){
+        //call your method here
+    }
+
+public void rotate(int[][] matrix) {
         int n=matrix[0].length;
         Stack<Integer> st=new Stack<>();
         for(int i=0; i<n; i++){

@@ -1,9 +1,15 @@
-public class Solution {
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        return combinationSum(candidates, target, 0);
-    }
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
     
-    public List<List<Integer>> combinationSum(int[] candidates, int target, int start) {
+
+public class CombinationSum {
+
+    public static void main(String[] args){
+        //call your method here
+    }
+
+    public static List<List<Integer>> combinationSum(int[] candidates, int target, int start) {
         
         List<List<Integer>> res = new ArrayList<List<Integer>>();
         Arrays.sort(candidates);
@@ -22,4 +28,5 @@ public class Solution {
         }
         return res;
     }
+
 }

@@ -1,5 +1,12 @@
-class Solution {
-    public boolean isPalindrome(int x) {
+
+
+public class PalindromeNumber {
+
+    public static void main(String[] args){
+        //call your method here
+    }
+
+   public boolean isPalindrome(int x) {
          if (x < 0) return false;
         int ans = 0;
         int num = x;

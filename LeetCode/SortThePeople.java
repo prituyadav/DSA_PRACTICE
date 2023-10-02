@@ -1,5 +1,15 @@
-class Solution {
-    public String[] sortPeople(String[] names, int[] heights) {
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class SortThePeople {
+
+    public static void main(String[] args){
+        //call your method here
+    }
+
+
+public String[] sortPeople(String[] names, int[] heights) {
         Map<Integer, String> map = new HashMap<>();
         for (int i = 0; i < names.length; i++) {
             map.put(heights[i], names[i]);

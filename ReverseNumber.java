@@ -1,4 +1,3 @@
-package DesimalToBinary;
 
 public class ReverseNumber {
 

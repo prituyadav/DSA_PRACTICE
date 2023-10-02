@@ -1,5 +1,14 @@
-class Solution {
-    public int maxConsecutive(int bottom, int top, int[] special) {
+import java.util.Arrays;
+
+public class MaximumConsecutive {
+
+    public static void main(String[] args){
+        //call your method here
+    }
+    
+      
+   
+   public int maxConsecutive(int bottom, int top, int[] special) {
         int maxDiff = Integer.MIN_VALUE;
         Arrays.sort(special);
         maxDiff = Math.max(maxDiff, special[0] - bottom);

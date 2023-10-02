@@ -1,7 +1,11 @@
 import java.util.*;
 
-public class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
+public class ThreeSum{
+  public static void main(String[] args){
+          // call your method here
+  }
+    
+    public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         if(nums.length < 3) return result;
         Arrays.sort(nums);
@@ -20,4 +24,7 @@ public class Solution {
         }
         return result;
     }
+
 }
+
+
