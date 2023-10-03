@@ -1,7 +1,7 @@
 package Perform_merging;
 
 import java.util.Arrays;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 /*
 Perform Merging Ended

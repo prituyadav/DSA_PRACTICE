@@ -31,8 +31,8 @@ class Main{
     }
   }
   public static void main(String[] args){
-      FastReader fs=new FastReader();
-      int tc=fs.nextInt();
+     // FastReader fs=new FastReader();
+    //  int tc=fs.nextInt();
         
   }
 }
