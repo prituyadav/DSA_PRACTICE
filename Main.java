@@ -5,9 +5,7 @@ public class Main {
 		
 	    public static void main(String[] args){
 	    	
-	    	
-	    	
-	    	
+	  
 //	    	System.out.println(5/2);
 //	    	
 //	    	System.out.println(5%2);
@@ -24,6 +22,7 @@ public class Main {
 	           
 	           System.out.println(binaryByRecursion(1024));
 	        };
+			input.close();
 	    }
 	    
     public static int binaryByRecursion(int num){
