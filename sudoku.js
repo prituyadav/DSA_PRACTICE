@@ -99,3 +99,37 @@ function display(board){
         console.log(bag)
     }
 }
+
+function runProgram(input) {
+    input=input.trim().split('\n');
+    let board=[];
+    let l=0;
+    for(let i=0; i<input.length; i++){
+        board.push(input[l++].trim().split(' ').map(Number))
+    }
+    if(solve(board)){
+        display(board);
+    }else{
+        console.log(-1)
+    }
+}
+if (process.env.USER === "") {
+  runProgram(``);
+} else {
+  process.stdin.resume();
+  process.stdin.setEncoding("ascii");
+  let read = "";
+  process.stdin.on("data", function (input) {
+    read += input;
+  });
+  process.stdin.on("end", function () {
+    read = read.replace(/\n$/, "");
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+  });
+  process.on("SIGINT", function () {
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+    process.exit(0);
+  });
+}
