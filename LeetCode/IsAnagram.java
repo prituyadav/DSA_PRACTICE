@@ -15,9 +15,8 @@ public class IsAnagram{
         char[] tChars = t.toCharArray();
         
         Arrays.sort(sChars);
-        Arrays.sort(tChars);
-        
-        
+        Arrays.sort(tChars);       
+
         return Arrays.equals(sChars, tChars);
     }
 }
