@@ -7,6 +7,7 @@ public class IsAnagram{
         String str= sc.next();
         String ana=sc.next();
 
+        System.out.println(str,ana);
         System.out.println(isAnagram(str, ana));
     }
 
@@ -15,8 +16,8 @@ public class IsAnagram{
         char[] tChars = t.toCharArray();
         
         Arrays.sort(sChars);
-        Arrays.sort(tChars);       
-
+        Arrays.sort(tChars);
+        
         return Arrays.equals(sChars, tChars);
     }
 }
