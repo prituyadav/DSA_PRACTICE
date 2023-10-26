@@ -9,6 +9,8 @@ public class IsAnagram{
 
         System.out.println(str+" "+ana);
         System.out.println(isAnagram(str, ana));
+
+        sc.close();
     }
 
      public static boolean isAnagram(String s, String t) {
