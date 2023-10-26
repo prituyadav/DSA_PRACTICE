@@ -7,7 +7,7 @@ public class IsAnagram{
         String str= sc.next();
         String ana=sc.next();
 
-        System.out.println(str,ana);
+        System.out.println(str+" "+ana);
         System.out.println(isAnagram(str, ana));
     }
 
